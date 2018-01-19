@@ -1,0 +1,12 @@
+version: '3'
+services:
+  rapid7-vm-engine:
+    build: .
+    image: rapid7/rapid7-vm-engine:latest
+    container_name: vm-engine
+    # Optional environment variables.  Comment out if using C -> E communication
+    environment:
+      - SECRET=<SUPERSECRETCODE>
+      - CONSOLE=<CONSOLE IP>
+    ports:
+      - "40814:40814"

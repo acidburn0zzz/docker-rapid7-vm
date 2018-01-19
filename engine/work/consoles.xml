@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- NeXpose consoles authorized to access the scan engine -->
+<Consoles>
+ <console id="1" enabled="1" connectTo="1" name="O=Rapid7, CN=NeXpose Security Console" lastAddress="CONSOLE" port="40815" plaintext_sharedSecret="SUPERSECRETKEY">
+  <cert></cert>
+ </console>
+</Consoles>

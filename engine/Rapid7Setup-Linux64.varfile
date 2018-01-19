@@ -1,0 +1,18 @@
+# Rapid7 Engine Varfile
+communicationDirectionChoice$Integer=0
+company=Rapid7
+component=nse
+createDesktopLinkAction$Boolean=true
+dbPort=5432
+firstname=Nexpose
+initService$Boolean=true
+lastname=Nexpose
+port=5432
+proxyHost=
+proxyPort=
+sys.adminRights$Boolean=true
+sys.component.engine$Boolean=true
+sys.component.typical$Boolean=false
+sys.installationDir=/opt/rapid7/nexpose
+sys.languageId=en
+sys.programGroupDisabled$Boolean=true

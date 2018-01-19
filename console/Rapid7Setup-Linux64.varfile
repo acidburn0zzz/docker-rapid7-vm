@@ -1,0 +1,23 @@
+# Rapid7 Console Varfile
+communicationDirectionChoice$Integer=0
+company=Rapid7
+component=nsc
+createDesktopLinkAction$Boolean=false
+dbPort=5432
+firstname=Nexpose
+initService$Boolean=false
+lastname=Nexpose
+password1=nxpassword
+password2=nxpassword
+port=5432
+proxyHost=
+proxyPort=
+registrationRequired$Integer=1
+requirePasswordChange$Boolean=false
+sys.adminRights$Boolean=true
+sys.component.engine$Boolean=false
+sys.component.typical$Boolean=true
+sys.installationDir=/opt/rapid7/nexpose
+sys.languageId=en
+sys.programGroupDisabled$Boolean=true
+username=nxadmin

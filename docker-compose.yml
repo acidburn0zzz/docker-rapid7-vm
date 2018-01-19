@@ -1,0 +1,29 @@
+version: '3'
+services:
+  rapid7-vm-console:
+    build: ./console/
+    image: rapid7/rapid7-vm-console:latest
+    container_name: vm-console
+    # Optional environment variables.  Please read documentation on what these are used for.
+    # Comment all environment variables out if activating manually and accepting the detaults.
+    environment:
+      - API_USER=<USER>
+      - API_PASSWORD=<PASSWORD>
+      - CONSOLE_PORT=<PORT>
+      - ACTIVATION_KEY=<LICENSE_KEY>
+      - ACTIVATION_FILE=<LICENSE_FILE>
+    ports:
+      - "40815:40815"
+      - "3780:3780"
+  rapid7-vm-engine:
+    build: ./engine/
+    image: rapid7/rapid7-vm-engine:latest
+    container_name: vm-engine
+    # Optional environment variables.  Comment out if using C -> E communication
+    environment:
+      - SECRET=<SUPERSECRETCODE>
+      - CONSOLE=<CONSOLE IP>
+    depends_on:
+      - rapid7-vm-console
+    ports:
+      - "40814:40814"
